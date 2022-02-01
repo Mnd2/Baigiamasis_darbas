@@ -11,14 +11,14 @@ btn.addEventListener("click", () => {
 });
 
 for (var x of links) {
-    x.addEventListener("click", () => {
+    x.addEventListener("click", function () {
         for (var x of links) {
             x.classList.remove("active");
         }
         this.classList.add("active");
     });
 }
-window.addEventListener("resize", () => {
+window.addEventListener("resize", function () {
     list.classList.remove("width");
     btn.classList.remove("open");
     for (var x of links) {
