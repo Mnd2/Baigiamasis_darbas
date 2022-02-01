@@ -61,7 +61,7 @@
             @include absolute-center;
             width: 17px;
             height: 23px;
-            background-image: url("./app/Images/awesome-icon1.svg");
+            background-image: url("/app/Images/awesome-icon1.svg");
             background-size: cover;
           }
           &.awsome2::after {
@@ -70,7 +70,7 @@
             @include absolute-center;
             width: 21px;
             height: 16px;
-            background-image: url("./app/Images/awesome-icon2.svg");
+            background-image: url("/app/Images/awesome-icon2.svg");
             background-size: cover;
           }
           &.awsome3::after {
@@ -78,7 +78,7 @@
             @include absolute-center;
             width: 23px;
             height: 18px;
-            background-image: url("./app/Images/awesome-icon3.svg");
+            background-image: url("/app/Images/awesome-icon3.svg");
             background-size: cover;
           }
         }
