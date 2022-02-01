@@ -39,8 +39,8 @@ header {
             &:hover {
             opacity: 1;
           }
-
-            &:active:after {
+          }
+          .active::after {
               content: "";
               position: absolute;
               border: 2px solid #E27866;
@@ -49,7 +49,9 @@ header {
               left: 0;
               right: 0;;
             }
-          }
+        }
+        .width {
+          transform: translateX(0);
         }
       }
     }
@@ -117,7 +119,7 @@ header {
   position: absolute;
   top: 34px;
   right: 40px;
-  width: 100px;
+  width: 250px;
   border-radius: 8px;
   background: $nav-color;
   opacity: 0;
