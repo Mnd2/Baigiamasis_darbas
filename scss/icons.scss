@@ -1,0 +1,54 @@
+.icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  h2 {
+    font-size: 2rem;
+    padding-bottom: 5px;
+  }
+  p {
+    color: $p-color;
+  }
+}
+
+.icons-box {
+  a {
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+    &:not(:last-child) {
+      margin-right: 100px;
+    }
+    &:hover::after {
+      position: absolute;
+      content: "";
+      transition: 3s;
+      left: 30%;
+      bottom: 50%;
+      box-shadow: 1px 0px 20px 9px #b46051;
+    }
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .icons-container {
+    @include flex-column;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .icons-box a:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .icons-box a:not(:last-child) {
+    margin-right: 35px;
+  }
+}

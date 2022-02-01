@@ -1,0 +1,24 @@
+footer {
+  background: #1c1c1c;
+
+  .container {
+    padding: 50px 15px 50px 15px;
+    display: flex;
+    justify-content: space-between;
+    span {
+      font-size: 1.8rem;
+      color: #707070;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      
+    }
+  }
+}
